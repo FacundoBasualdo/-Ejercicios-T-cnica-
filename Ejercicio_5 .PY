@@ -1,5 +1,5 @@
 print ("")
-print (" Debe Ingresar Sus 5 Notas Para Saber Que Promedio Tiene".)
+print (" Debe Ingresar Sus 5 Notas Para Saber Que Promedio Tiene.")
 print ("")
 
 
