@@ -2,6 +2,7 @@
 print ("")
 usuario_creado = raw_input( "Crea Un Nombre De Usuario: ")
 contrasena_creado = raw_input(" Crea Una Contrasena: ")
+
 print ("")
 print ( "Usted A Creado Un Usuario Y Contrasena Escribala Correctamaente Para Ingresar Al Sistema.")
 print ("")
