@@ -1,13 +1,15 @@
 def buscar_reemplazar(lista, buscador, reemplazante):
 
-    lista_meter = []
+    lista_reemplazante = []
     for caracter in lista:
-        lista_meter.append(caracter)
         if (caracter == buscador):
-            lista_meter.remove(caracter)
-            lista_meter.append(reemplazante)
+            lista_reemplazante.append(reemplazante)
+        else:
+            lista_reemplazante.append(caracter)
+    return lista_reemplazante
 
-    return lista_meter
+
+    return lista
 
 lista = []
 crear_lista = True
