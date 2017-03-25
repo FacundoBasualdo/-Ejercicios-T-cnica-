@@ -11,10 +11,10 @@ while(encender):
             lista_numeros.remove("salir")
             encender = False
 
-numero_mayor = lista_numeros[0]
+mayor = 0
 for numero in lista_numeros:
-    if (numero > numero_mayor):
-        numero_mayor = numero
+    if (int(numero) > int(mayor)):
+        mayor = numero
 
 print ("")
-print ("El Numero Mayor Es " + numero_mayor)
+print ("El Numero Mayor Es " + mayor)
