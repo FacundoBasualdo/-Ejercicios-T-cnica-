@@ -14,18 +14,32 @@
 #            funcionando = False
 
 
+print ("")
+print (" Debe Ingresar Numeros Para Mostrar El Promedio De Ellos.")
+print ("")
+
 
 lista_numeros = []
-numero1 = raw_input("Escriba un numero: ")
-numero2 = raw_input("Escriba un numero: ")
-numero3 = raw_input("Escriba un numero: ")
-numero5 = raw_input("Escriba un numero: ")
-numero4 = raw_input("Escriba un numero: ")
-lista_numeros.append(numero1)
-lista_numeros.append(numero2)
-lista_numeros.append(numero3)
-lista_numeros.append(numero4)
-lista_numeros.append(numero5)
-numeros_sumados = float(numero1) + float(numero2) + float(numero3) + float(numero4) + float(numero5)
-promedio_numeros = numeros_sumados / 5
-print promedio_numeros
+print ("Ingresa (salir) Al Terminar. ")
+
+numeros_ingresar = True
+while (numeros_ingresar):
+    lista_numeros.append(raw_input("--> numeros: "))
+    for caracter in lista_numeros:
+        if (caracter == "salir"):
+            lista_numeros.remove("salir")
+            numeros_ingresar = False
+
+
+sumar = 0
+for numero in lista_numeros:
+    sumar = sumar + int(numero)
+
+divisor = 0
+for numero in lista_numeros:
+    divisor += 1
+
+promedio = sumar / divisor
+
+print ("")
+print ("El Promedio Es De: " + str(promedio))

@@ -8,7 +8,6 @@ print ("Ingresa (salir) Al Terminar. ")
 
 nota_ingresar = True
 while (nota_ingresar):
-    print lista_notas
     lista_notas.append(raw_input("--> Nota: "))
     for caracter in lista_notas:
         if (caracter == "salir"):
