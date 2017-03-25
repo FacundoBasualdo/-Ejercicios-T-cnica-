@@ -4,29 +4,28 @@ while_convertir = True
 while(while_convertir):
     print ("")
     print ("----------------------------------------------")
-    print (" Si Termino De Convertir Escriba -->salir<--.")
+    print (" Si Termino De Convertir Escriba (salir).")
     print ("----------------------------------------------")
     print ("")
-    moneda_a_convertir = raw_input(" Ingrese Si Quiere Convertir A (euro) O (dolar): ")
+    moneda_Ingresar = raw_input(" Ingrese Si Quiere Convertir A Pesos Con (euro) O (dolar): ")
     print ("")
 
 
-    if (moneda_a_convertir == "salir"):
-            while_convertir = False
+    if (moneda_Ingresar == "salir"):
+        while_convertir = False
 
 
-    elif (moneda_a_convertir == "euro"):
-        pesos = raw_input ("Ingrese Cuantos (Pesos) Quiere Convertir: ")
+    elif (moneda_Ingresar == "euro"):
+        pesos_euros = raw_input ("Ingrese La Cantidad De (EUROS) Que Quiera Convertir A PESOS: ")
         print ("")
-        resultado_euro = float(pesos) / euro
-        print ("--->La Cantidad Convertida Es De " + str(resultado_euro) + " EUROS")
+        resultado_euro = float(pesos_euros) * euro
+        print ("--->La Cantidad Convertida Es De " + str(resultado_euro) + " PESOS")
 
 
-    elif (moneda_a_convertir == "dolar"):
-        pesos = raw_input ("Ingrese Cuantos (Pesos) Quiere Convertir: ")
+    elif (moneda_Ingresar == "dolar"):
+        pesos_dolares = raw_input ("Ingrese La Cantidad De (DOLARES) Que Quiera Convertir A PESOS: ")
         print ("")
-        resultado_dolar = float(pesos) / dolar
-        print ("--->La Cantidad Convertida Es De " + str(resultado_dolar) + " DOLARES")
-
+        resultado_dolar = float(pesos_dolares) * dolar
+        print ("--->La Cantidad Convertida Es De " + str(resultado_dolar) + " PESOS")
     else:
         print (" -<Elija (euro) o (dolar), SU OPCION ES INCORRECTA!>-")
