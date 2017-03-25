@@ -25,9 +25,8 @@ while(while_encendido):
 
     elif (opcion == "2"):
         print ("")
-        for datos in lista_datos:
-            print (dic_contactos["nombre"] + " , " + dic_contactos["telefono"])
-            print ("")
+        print (lista_datos)
+        print ("")
 
 
     elif (opcion == "3"):
