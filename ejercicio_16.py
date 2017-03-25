@@ -13,7 +13,8 @@ while(encender):
 
 numero_menor = lista_numeros[0]
 for numero in lista_numeros:
-    if (numero < numero_menor):
+    if (int(numero) < int(numero_menor)):
         numero_menor = numero
 
+print ("")
 print ("El Numero Menor Es " + numero_menor)
