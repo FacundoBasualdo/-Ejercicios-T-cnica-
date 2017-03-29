@@ -13,20 +13,25 @@ while(while_encendido):
     print ("")
 
     if (opcion == "1"):
-        print ("")
 
-        dic_contactos = {
-            "nombre": raw_input("Ingresar El Nombre: "),
-            "telefono": raw_input("Ingresar El Telefono: ")
+        nombre = raw_input(" Escriba Su Nombre: ")
+        print ("")
+        telefono = raw_input(" Escriba Su Telefono: ")
+
+        datos = {
+            "nombre": nombre,
+            "telefono": telefono
         }
 
-        lista_datos.append(dic_contactos)
+        lista_datos.append(datos)
 
 
     elif (opcion == "2"):
-        print ("")
-        print (lista_datos)
-        print ("")
+        for datos in lista_datos:
+            print ("")
+            print "  Nombre: " + datos["nombre"] + ", " + "Telefono: " + datos["telefono"]
+            print ("")
+
 
 
     elif (opcion == "3"):
